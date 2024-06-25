@@ -10,6 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    height: 100%;
     background-color: #f0f0f0;
     flex-direction: column;
 }
@@ -22,7 +23,8 @@ body {
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    flex-grow: 1;
+        height:auto;
+    
     }
 
 .clock-container {
