@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySphere</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="clock-container">
+        <div class="clock">
+            <div class="time" id="currentTime"></div>
+            <div class="date" id="currentDate"></div>
+                <button id="toggleTimeFormat">12 HR</button>
+
+			<div id="weatherInfo">Loading...</div>
+        </div>
+        <!-- <div id="weather">
+            <h3>Weather</h3>
+            
+        </div> -->
+    </div>
+
+    <div class="container">
+        <div class="stopwatch">
+            <h3>STOPWATCH</h3>
+            <div class="display" id="stopwatchDisplay">0s 000</div>
+            <button id="startStopwatch">START</button>
+            <button id="resetStopwatch">RESET</button>
+        </div>
+        
+        <div id="countdownContainer">
+            <h2>Countdown</h2>
+            <div id="countdowns"></div>
+        </div>
+
+        <div class="alarm">
+            <h3>ALARM</h3>
+            <div id="alarms"></div>
+            <input type="time" id="newAlarmTime" autocomplete="off">
+            <button id="addAlarm">
+                <img src="https://api.iconify.design/dashicons:insert.svg?color=%23ffffff" alt="Add"/>
+            </button>
+        </div>
+
+        <div class="todo-list">
+            <h3>TO-DO LIST</h3>
+            <input type="text" id="newTask" placeholder="Add new task" autocomplete="off">
+            <button id="addTask">
+                <img src="https://api.iconify.design/dashicons:insert.svg?color=%23ffffff" alt="Add"/>
+            </button>
+            <ul id="tasks"></ul>
+        </div>
+
+        <div class="calendar">
+            <h3>CALENDAR</h3>
+            <div id="calendar">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>SU</th>
+                            <th>MO</th>
+                            <th>TU</th>
+                            <th>WE</th>
+                            <th>TH</th>
+                            <th>FR</th>
+                            <th>SA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Calendar days will be inserted here by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+
+
+
+             <div id="noteContainer">
+            <h2>Notes</h2>
+            <button id="toggleNoteForm">Add Note</button>
+            <div id="noteForm" class="form-container hidden">
+                <input type="text" id="noteTitle" placeholder="Title">
+                <textarea id="noteContent" placeholder="Your Notes"></textarea>
+                <button id="saveNote">Save Note</button>
+            </div>
+            <div id="notes"></div>
+        </div>
+
+
+
+        
+
+        <div class="timer">
+    <h3>TIMER</h3>
+    <input type="text" id="timerInput" value="5m 00s" autocomplete="off">
+    <button id="startTimer">START</button>
+    <button id="resetTimer">RESET</button>
+
+    <br>
+    <button id="quickTimer5">5 min</button>
+    <button id="quickTimer10">10 min</button>
+    <button id="quickTimer15">15 min</button>
+    <button id="quickTimer30">30 min</button>
+    
+    <button id="toggleCustomTimerForm">Custom Timer</button>
+
+    <form id="customTimerForm" class="hidden">
+        <label for="customMinutes">Minutes:</label>
+        <input type="number" id="customMinutes" name="customMinutes" min="0" required>
+        <label for="customSeconds">Seconds:</label>
+        <input type="number" id="customSeconds" name="customSeconds" min="0" max="59" required>
+        <button type="button" id="setCustomTimer">SET</button>
+    </form>
+</div>
+
+
+    <!-- POMODORO -->
+    <div class="pomodoro-container">
+         <h3>POMODORO</h3>
+         <br>
+        <div class="pomodoro-display">
+        <h1 id="pomodoroDisplay">25:00</h1>
+        <br>
+        <p id="pomodoroStatus"></p>
+    </div>
+    <br>
+    <div class="pomodoro-controls">
+       
+        <button id="startPomodoro">START</button>
+        <button id="stopPomodoro">STOP</button>
+        <button id="resetPomodoro">RESET</button>
+        <button id="focusBreakToggle">FOCUS / BREAK</button>
+    </div>
+    
+</div>
+
+
+        <div id="reminderContainer">
+            <h2>Reminders</h2>
+            <button id="toggleReminderForm">Add Reminder</button>
+            <div id="reminderForm" class="form-container hidden">
+                <input type="text" id="reminderTitle" placeholder="Title">
+                <input type="date" id="reminderDate">
+                <input type="time" id="reminderTime">
+                <button id="addReminder">Save Reminder</button>
+            </div>
+            <div id="reminders"></div>
+        </div>
+
+
+
+       
+    </div>
+
+
+
+
+
+        <div style="white-space: nowrap; font-family: Poppins, sans-serif; margin: 10px auto 30px; font-size: 12px; line-height: 1.3; font-weight: 500; text-align: center; max-width: 100%; transition: background 0.2s ease 0s; display: block !important; opacity: 1 !important; visibility: visible !important; position: relative;">
+      <a href="https://www.varts.org/" target="_blank" rel="noopener noreferrer" style="color: rgb(22, 23, 27) !important; direction: ltr !important; text-decoration: none; display: inline-flex !important; align-items: center; justify-content: center; flex-wrap: wrap; background: rgb(254, 254, 254); border-radius: 50em; box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px; padding: 5px 10px; opacity: 1 !important; visibility: visible !important;">
+        <img src="https://www.varts.org/pic/VArts.svg" alt="VA" style="height: 17px; width: 17px; max-height: 17px; max-width: 17px; border-radius: 50em; margin: 0px 5px 0px 0px;">
+        <span style="line-height: 1.4em; padding-top: 2px; color: rgb(22, 23, 27); font-size: inherit;">Developed by Visual Arts</span>
+      </a>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
