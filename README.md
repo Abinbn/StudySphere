@@ -35,8 +35,24 @@ We welcome contributions from the community to enhance StudySphere. Please follo
 4. Push to the branch: `git push origin feature/YourFeature`
 5. Open a pull request.
 
-#### **License**
-This project is licensed under the MIT License. See the [LICENSE](http://creativecommons.org/licenses/by/4.0/)  file for details.
+## License
+
+This project is licensed under the Creative Commons Attribution 4.0 International License. You can view the full license [here](LICENSE).
+
+[![Creative Commons License](https://i.creativecommons.org/l/by/4.0/88x31.png)](http://creativecommons.org/licenses/by/4.0/)
+
+### **You are free to:**
+
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material for any purpose, even commercially.
+
+### **Under the following terms:**
+
+- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+For full license details, please refer to the [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+
+
 
 #### **Contact**
 For any questions or suggestions, please open an issue in this repository or contact the project maintainer at [designmania.org@example.com](mailto:designmania.org@example.com).
