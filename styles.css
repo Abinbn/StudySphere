@@ -1,0 +1,194 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    flex-direction: column;
+}
+
+.clock-container {
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+
+
+.clock {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex-grow: 1;
+}
+
+.time {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.date {
+    font-size: 24px;
+}
+
+#weather {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-left: 20px;
+    width: 200px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container > div {
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.display {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#startStopwatch, button#startTimer, button#startPomodoro, button#addTask, button#addAlarm, button#addReminder, button#saveNote {
+    background-color: #4CAF50;
+    color: white;
+}
+
+button#resetStopwatch, button#resetTimer, button#resetPomodoro {
+    background-color: #f44336;
+    color: white;
+}
+
+.alarm-item, .reminder-item, .note-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.alarm-item input[type="checkbox"], .reminder-item span {
+    margin-left: 10px;
+}
+
+.todo-list input, .timer input, input[type="checkbox"], .note-maker input, .note-maker textarea {
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+input, textarea {
+    width: calc(100% - 24px);
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+}
+
+#tasks {
+    list-style: none;
+}
+
+#tasks li {
+    padding: 5px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    border-radius: 5px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+#tasks li.completed {
+    text-decoration: line-through;
+    color: grey;
+}
+
+#calendar table {
+    width: 100%;
+}
+
+#calendar th, #calendar td {
+    padding: 5px;
+    text-align: center;
+}
+
+.current-day {
+    background-color: yellow;
+    border-radius: 100px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.count-time {
+    font-size: 24px;
+}
+
+.date-time {
+    text-align: center;
+}
+
+small {
+    font-size: 0.8em;
+    color: #666;
+}
+
+
